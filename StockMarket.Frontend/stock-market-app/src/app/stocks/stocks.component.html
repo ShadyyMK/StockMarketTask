@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <h2 class="section-header">Stocks</h2>
+  <div class="table-responsive">
+    <table class="stocks-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stock of stocks">
+          <td>{{ stock.name }}</td>
+          <td>{{ stock.price | currency }}</td>
+          <td>
+            <button class="btn place-order-btn" (click)="openOrderModal(stock)">Place Order</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

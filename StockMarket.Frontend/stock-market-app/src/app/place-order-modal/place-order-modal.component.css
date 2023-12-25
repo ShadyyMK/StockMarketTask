@@ -1,0 +1,35 @@
+.place-order-modal {
+  font-family: Arial, sans-serif;
+}
+
+.place-order-modal h2 {
+  color: #333;
+}
+
+.place-order-modal form {
+  margin-top: 15px;
+}
+
+.place-order-modal input[type='text'], 
+.place-order-modal input[type='number'] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.place-order-modal button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.place-order-modal button:hover {
+  opacity: 0.8;
+}

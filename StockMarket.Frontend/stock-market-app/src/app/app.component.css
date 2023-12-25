@@ -1,0 +1,34 @@
+.stocks-section,
+.orders-section {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.divider {
+  background-color: #e0e0e0;
+  width: 1px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .stocks-section,
+  .orders-section {
+    margin-bottom: 20px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+.app-title {
+  color: #007bff; /* Bootstrap primary color */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+}

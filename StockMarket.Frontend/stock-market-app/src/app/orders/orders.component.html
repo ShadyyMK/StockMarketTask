@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h2 class="section-header">Orders</h2>
+  <div *ngIf="orders.length > 0; else noOrders">
+    <div class="table-responsive">
+      <table class="orders-table">
+        <thead>
+          <tr>
+            <th>Person Name</th>
+            <th>Stock Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orders">
+            <td>{{ order.personName }}</td>
+            <td>{{ order.stockName }}</td>
+            <td>{{ order.price | currency }}</td>
+            <td>{{ order.quantity }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <ng-template #noOrders>
+    <p>No orders have been placed yet.</p>
+  </ng-template>
+</div>
